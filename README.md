@@ -1,14 +1,82 @@
-# FileExplorer
+# 📁 文件管理器 - 现代化文件浏览器
 
-Win32 C++ File Explorer application with icon support.
+**版本**: 1.0.0  
+**位置**: D:\FileExplorer  
+**技术栈**: WPF (.NET 10)
 
-## Features
-- File browser
-- Icon support
-- Pure Win32 API + GDI implementation
+---
 
-## Usage
-Download `FileExplorer_with_icon.exe` and run directly.
+## ✨ 功能
 
-## Build
-This project is built with Dev-Cpp and TDM-GCC-64 compiler.
+### 文件操作
+- ✅ 浏览文件和文件夹
+- ✅ 导航历史 (后退/前进/向上)
+- ✅ 快速访问 (桌面/下载/文档/图片/音乐/视频)
+- ✅ 驱动器列表
+- ✅ 新建文件夹
+- ✅ 双击打开文件/文件夹
+
+### 设置功能
+- ✅ **主题**: 深色/浅色主题
+- ✅ **默认路径**: 启动时自动打开指定目录
+- ✅ **显示隐藏文件**: 开关控制
+- ✅ **显示文件扩展名**: 开关控制
+- ✅ **排序方式**: 名称/大小/修改时间 (升序/降序)
+
+### UI 特性
+- 🌙 深色主题
+- 📱 视图切换
+- 📊 状态栏显示
+
+---
+
+## 🚀 启动
+
+```powershell
+cd D:\FileExplorer
+dotnet run
+```
+
+或直接运行：
+```
+D:\FileExplorer\bin\Debug\net10.0-windows\FileExplorer.exe
+```
+
+---
+
+## 📁 项目结构
+
+```
+D:\FileExplorer\
+├── App.xaml              # 程序入口
+├── MainWindow.xaml        # 主窗口 UI
+├── MainWindow.xaml.cs     # 主窗口逻辑
+├── SettingsWindow.xaml   # 设置窗口 UI
+├── SettingsWindow.xaml.cs # 设置窗口逻辑
+└── FileExplorer.csproj   # 项目配置
+```
+
+---
+
+## ⚙️ 设置文件位置
+
+设置保存在：
+```
+%APPDATA%\FileExplorer\settings.json
+```
+
+---
+
+## 🎮 操作指南
+
+| 操作 | 方法 |
+|------|------|
+| 进入文件夹 | 双击文件夹 |
+| 打开文件 | 双击文件 |
+| 后退 | 点击 ⬅ 按钮或按 Backspace |
+| 前进 | 点击 ➡ 按钮 |
+| 向上 | 点击 ⬆ 按钮 |
+| 刷新 | 点击 🔄 按钮 |
+| 新建文件夹 | 点击 "新建文件夹" |
+| 打开设置 | 点击 ⚙️ 按钮 |
+| 跳转路径 | 在地址栏输入路径后点击 "转到" |

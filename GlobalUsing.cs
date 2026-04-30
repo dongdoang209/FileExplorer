@@ -1,0 +1,58 @@
+// GlobalUsing.cs - 解决 WPF 与 WinForms 的命名空间冲突
+global using System;
+global using System.Collections.Generic;
+global using System.IO;
+global using System.Linq;
+global using System.Threading;
+global using System.Threading.Tasks;
+
+// 明确指定 WPF 类型，禁用 WinForms 的隐式引用
+global using Application = System.Windows.Application;
+global using MessageBox = System.Windows.MessageBox;
+global using UserControl = System.Windows.Controls.UserControl;
+global using Button = System.Windows.Controls.Button;
+global using TextBox = System.Windows.Controls.TextBox;
+global using ComboBox = System.Windows.Controls.ComboBox;
+global using ListBox = System.Windows.Controls.ListBox;
+global using ListBoxItem = System.Windows.Controls.ListBoxItem;
+global using Label = System.Windows.Controls.Label;
+global using CheckBox = System.Windows.Controls.CheckBox;
+global using RadioButton = System.Windows.Controls.RadioButton;
+global using Panel = System.Windows.Controls.Panel;
+global using Grid = System.Windows.Controls.Grid;
+global using StackPanel = System.Windows.Controls.StackPanel;
+global using WrapPanel = System.Windows.Controls.WrapPanel;
+global using DockPanel = System.Windows.Controls.DockPanel;
+global using Canvas = System.Windows.Controls.Canvas;
+global using ScrollViewer = System.Windows.Controls.ScrollViewer;
+global using Border = System.Windows.Controls.Border;
+global using TextBlock = System.Windows.Controls.TextBlock;
+global using Image = System.Windows.Controls.Image;
+global using Ellipse = System.Windows.Shapes.Ellipse;
+global using Rectangle = System.Windows.Shapes.Rectangle;
+// 不全局别名 Path，避免与 System.IO.Path 冲突
+global using Window = System.Windows.Window;
+global using Brush = System.Windows.Media.Brush;
+global using Brushes = System.Windows.Media.Brushes;
+global using Color = System.Windows.Media.Color;
+global using SolidColorBrush = System.Windows.Media.SolidColorBrush;
+global using FontWeight = System.Windows.FontWeight;
+global using FontWeights = System.Windows.FontWeights;
+global using HorizontalAlignment = System.Windows.HorizontalAlignment;
+global using VerticalAlignment = System.Windows.VerticalAlignment;
+global using Orientation = System.Windows.Controls.Orientation;
+global using Thickness = System.Windows.Thickness;
+global using CornerRadius = System.Windows.CornerRadius;
+global using Visibility = System.Windows.Visibility;
+global using KeyEventArgs = System.Windows.Input.KeyEventArgs;
+global using Cursors = System.Windows.Input.Cursors;
+global using MessageBoxButton = System.Windows.MessageBoxButton;
+global using MessageBoxImage = System.Windows.MessageBoxImage;
+global using MessageBoxResult = System.Windows.MessageBoxResult;
+global using RowDefinition = System.Windows.Controls.RowDefinition;
+global using ColumnDefinition = System.Windows.Controls.ColumnDefinition;
+global using GridLength = System.Windows.GridLength;
+global using ControlTemplate = System.Windows.Controls.ControlTemplate;
+global using Style = System.Windows.Style;
+global using ContentPresenter = System.Windows.Controls.ContentPresenter;
+global using FrameworkElementFactory = System.Windows.FrameworkElementFactory;
