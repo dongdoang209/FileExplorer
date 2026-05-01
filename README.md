@@ -1,7 +1,6 @@
 # 📁 文件管理器
 
 **版本**: 1.0.0  
-**位置**: D:\FileExplorer  
 **技术栈**: WPF (.NET 10)
 
 ---
@@ -33,13 +32,13 @@
 ## 🚀 启动
 
 ```powershell
-cd D:\FileExplorer
+cd "安装路径"
 dotnet run
 ```
 
 或直接运行：
 ```
-D:\FileExplorer\bin\Debug\net10.0-windows\FileExplorer.exe
+安装路径\bin\Debug\net10.0-windows\FileExplorer.exe
 ```
 
 ---
@@ -47,7 +46,7 @@ D:\FileExplorer\bin\Debug\net10.0-windows\FileExplorer.exe
 ## 📁 项目结构
 
 ```
-D:\FileExplorer\
+FileExplorer\
 ├── App.xaml              # 程序入口
 ├── MainWindow.xaml        # 主窗口 UI
 ├── MainWindow.xaml.cs     # 主窗口逻辑
